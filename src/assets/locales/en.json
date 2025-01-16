@@ -1,6 +1,7 @@
 {
     "translation": {
         "edit_and_reload": "Edit <1>src/App.js</1> and save to reload.",
+        "edit_and_reload_plural": "Edit <1>src/App.js</1> and save all reloads.",
         "learn_react": "Learn React"
     }
 }
