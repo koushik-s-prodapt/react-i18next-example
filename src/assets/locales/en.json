@@ -2,6 +2,8 @@
     "translation": {
         "edit_and_reload": "Edit <1>src/App.js</1> and save to reload.",
         "edit_and_reload_plural": "Edit <1>src/App.js</1> and save all reloads.",
+        "keyPluralMultipleEgArabic_0": "the plural form 0",
+        "keyPluralMultipleEgArabic_1": "the plural form 1",
         "learn_react": "Learn React"
     }
 }
