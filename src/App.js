@@ -9,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
             <Trans i18nKey="edit_and_reload">Edit <code>src/App.js</code> and save to reload.</Trans>
+            <Trans i18nKey="display_only">view only <code>src/App.js</code></Trans>
         </p>
         <a
           className="App-link"
