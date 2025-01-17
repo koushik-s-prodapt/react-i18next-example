@@ -19,7 +19,7 @@ i18n
       escapeValue: false, // React already protects from XSS
       format: (value, format, lng) => {
         if (format === 'intlDate') {
-          return new Intl.DateTimeFormat(lng, {year: 'numeric', month: 'long', day: 'numeric'}).format(value);
+          return new Intl.DateTimeFormat(lng, {month:'2-digit',day:'2-digit', year:'numeric'}).format(value);
         }
         return value;
       },
