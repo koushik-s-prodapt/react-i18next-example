@@ -18,12 +18,8 @@ i18n
     interpolation: {
       escapeValue: false, // React already protects from XSS
       format: (value, format, lng) => {
-        if (format === 'datetime') {
-          return new Intl.DateTimeFormat(lng, {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          }).format(value);
+        if (format === 'intlDate') {
+          return new Intl.DateTimeFormat(lng, {year: 'numeric', month: 'long', day: 'numeric'}).format(value);
         }
         return value;
       },
