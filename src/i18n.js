@@ -15,7 +15,10 @@ i18n
     resources,
     lng: "es",
     interpolation: {
-      escapeValue: false
+        format: function(value, format, lng) {
+            if (format === 'intlDate') return new Intl.DateTimeFormat().format(value);
+            return value;
+        }
     }
   });
 
