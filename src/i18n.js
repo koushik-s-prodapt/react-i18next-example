@@ -14,12 +14,20 @@ i18n
   .init({
     resources,
     lng: "es",
+    fallbackLng: 'en',
     interpolation: {
-        format: function(value, format, lng) {
-            if (format === 'intlDate') return new Intl.DateTimeFormat().format(value);
-            return value;
+      escapeValue: false, // React already protects from XSS
+      format: (value, format, lng) => {
+        if (format === 'datetime') {
+          return new Intl.DateTimeFormat(lng, {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          }).format(value);
         }
-    }
+        return value;
+      },
+    },
   });
 
 
