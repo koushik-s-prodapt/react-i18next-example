@@ -21,6 +21,9 @@ i18n
         if (format === 'intlDate') {
           return moment(value).format("MMMM Do YYYY, h:mm A")
         }
+        if (format === 'currency') {
+            return new Intl.NumberFormat(lng, { style: 'currency', currency: 'USD' }).format(value);
+        }
         return value;
       },
     },
