@@ -1,7 +1,7 @@
 {
     "translation": {
         "edit_and_reload": "Edit <1>src/App.js</1> and save to reload.",
-        "price": "The price is {{value, currency}}."
+        "price": "The price is {{value, money}}."
         "welcome": "Welcome, {{name}}! Today's date is {{date, intlDate}}.",
         "learn_react": "Learn React"
     }
